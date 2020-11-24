@@ -12,7 +12,7 @@ function Header() {
 					<div className="container">
 
 						<a className="navbar-brand logo_h" href="index.html">
-							<img src="../../logo.svg" alt="" />
+							SHOP
 						</a>
 						<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 							aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@ function Header() {
 									<a className="nav-link" href="index.html">Home</a>
 								</li>
 								<li className="nav-item submenu dropdown">
-									<a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+									<a href="/" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 										aria-expanded="false">Shop</a>
 									<ul className="dropdown-menu">
 										<li className="nav-item"><a className="nav-link" href="category.html">Shop Category</a></li>
@@ -38,7 +38,7 @@ function Header() {
 									</ul>
 								</li>
 								<li className="nav-item submenu dropdown">
-									<a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+									<a href="/" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 										aria-expanded="false">Blog</a>
 									<ul className="dropdown-menu">
 										<li className="nav-item"><a className="nav-link" href="blog.html">Blog</a></li>
@@ -46,7 +46,7 @@ function Header() {
 									</ul>
 								</li>
 								<li className="nav-item submenu dropdown">
-									<a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+									<a href="/" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 										aria-expanded="false">Pages</a>
 									<ul className="dropdown-menu">
 										<li className="nav-item"><a className="nav-link" href="login.html">Login</a></li>
@@ -58,7 +58,7 @@ function Header() {
 							</ul>
 							<ul className="nav navbar-nav navbar-right">
 								<li className="nav-item">
-									<a href="#" className="cart"><span className="ti-bag"></span></a>
+									<a href="/" className="cart"><span className="ti-bag"></span></a>
 								</li>
 								<li className="nav-item">
 									<button className="search"><span className="lnr lnr-magnifier" id="search"></span></button>
@@ -67,15 +67,6 @@ function Header() {
 						</div>
 					</div>
 				</nav>
-			</div>
-			<div className="search_input" id="search_input_box">
-				<div className="container">
-					<form className="d-flex justify-content-between">
-						<input type="text" className="form-control" id="search_input" placeholder="Search Here" />
-						<button type="submit" className="btn"></button>
-						<span className="lnr lnr-cross" id="close_search" title="Close Search"></span>
-					</form>
-				</div>
 			</div>
 		</header>
 	);

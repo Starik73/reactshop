@@ -1,74 +1,34 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from 'jquery';
-import Popper from 'popper.js';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './styles.css';
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Container } from 'react-bootstrap';
 
 function Header() {
 	return (
-		<header className="header_area sticky-header">
-			<div className="main_menu">
-				<nav className="navbar navbar-expand-lg navbar-light main_box">
-					<div className="container">
+		<Navbar bg="secondary" expand="lg">
+			<Container className="">
+				<Navbar.Brand href="#home"><b>React-Bootstrap</b></Navbar.Brand>
+				<Navbar.Toggle aria-controls="basic-navbar-nav" />
+				<Navbar.Collapse id="basic-navbar-nav">
+					<Nav className="mr-auto">
+						<Nav.Link className="mx-2 line" href="#home">Home</Nav.Link>
+						<Nav.Link className="mx-2 line" href="#link">About</Nav.Link>
+						<Nav.Link className="mx-2 line" href="#link">Departments</Nav.Link>
+						<Nav.Link className="mx-2 line" href="#link">Contact</Nav.Link>
+						<Nav.Link className="mx-2 line" href="#link">Offers</Nav.Link>
+						<NavDropdown title="Menu" id="basic-nav-dropdown">
+							<NavDropdown.Item href="#action/3.1">Action1</NavDropdown.Item>
+							<NavDropdown.Item href="#action/3.2">Action2</NavDropdown.Item>
+							<NavDropdown.Item href="#action/3.3">Action3</NavDropdown.Item>
+							<NavDropdown.Item href="#action/3.4">Action4</NavDropdown.Item>
+						</NavDropdown>
+					</Nav>
+					<Form inline>
+						<FormControl type="text" placeholder="Search" className="mr-sm-2" />
+						<Button variant="outline-info">Search</Button>
+					</Form>
+				</Navbar.Collapse>
+			</Container>
+		</Navbar>
 
-						<a className="navbar-brand logo_h" href="index.html">
-							SHOP
-						</a>
-						<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-							aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span className="icon-bar"></span>
-							<span className="icon-bar"></span>
-							<span className="icon-bar"></span>
-						</button>
-
-						<div className="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul className="nav navbar-nav menu_nav ml-auto">
-								<li className="nav-item active">
-									<a className="nav-link" href="index.html">Home</a>
-								</li>
-								<li className="nav-item submenu dropdown">
-									<a href="/" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-										aria-expanded="false">Shop</a>
-									<ul className="dropdown-menu">
-										<li className="nav-item"><a className="nav-link" href="category.html">Shop Category</a></li>
-										<li className="nav-item"><a className="nav-link" href="single-product.html">Product Details</a></li>
-										<li className="nav-item"><a className="nav-link" href="checkout.html">Product Checkout</a></li>
-										<li className="nav-item"><a className="nav-link" href="cart.html">Shopping Cart</a></li>
-										<li className="nav-item"><a className="nav-link" href="confirmation.html">Confirmation</a></li>
-									</ul>
-								</li>
-								<li className="nav-item submenu dropdown">
-									<a href="/" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-										aria-expanded="false">Blog</a>
-									<ul className="dropdown-menu">
-										<li className="nav-item"><a className="nav-link" href="blog.html">Blog</a></li>
-										<li className="nav-item"><a className="nav-link" href="single-blog.html">Blog Details</a></li>
-									</ul>
-								</li>
-								<li className="nav-item submenu dropdown">
-									<a href="/" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-										aria-expanded="false">Pages</a>
-									<ul className="dropdown-menu">
-										<li className="nav-item"><a className="nav-link" href="login.html">Login</a></li>
-										<li className="nav-item"><a className="nav-link" href="tracking.html">Tracking</a></li>
-										<li className="nav-item"><a className="nav-link" href="elements.html">Elements</a></li>
-									</ul>
-								</li>
-								<li className="nav-item"><a className="nav-link" href="contact.html">Contact</a></li>
-							</ul>
-							<ul className="nav navbar-nav navbar-right">
-								<li className="nav-item">
-									<a href="/" className="cart"><span className="ti-bag"></span></a>
-								</li>
-								<li className="nav-item">
-									<button className="search"><span className="lnr lnr-magnifier" id="search"></span></button>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</div>
-		</header>
 	);
 }
 

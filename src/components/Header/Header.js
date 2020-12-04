@@ -18,8 +18,8 @@ function Header() {
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="mr-auto">
-						<Nav.Link className="mx-2 line" href="#home">Home</Nav.Link>
-						<Nav.Link className="mx-2 line" href="#link">About</Nav.Link>
+						<Nav.Link className="mx-2 line" href="/">Home</Nav.Link>
+						<Nav.Link className="mx-2 line" href="/products">Products</Nav.Link>
 						<Nav.Link className="mx-2 line" href="#link">Departments</Nav.Link>
 						<Nav.Link className="mx-2 line" href="#link">Contact</Nav.Link>
 						<Nav.Link className="mx-2 line" href="#link">Offers</Nav.Link>

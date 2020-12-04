@@ -9,10 +9,10 @@
 	position: absolute;
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
 	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 2px; /*задаём ширину линии*/
-	background-color: #170cb6; /*задаём цвет линии*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: #a3a2af; /*задаём цвет линии*/
 	content: "";
-	transition: width 0.3s ease-out; /*задаём время анимации*/
+	transition: width 0.5s ease-out; /*задаём время анимации*/
 }
 
 .line:hover:after,

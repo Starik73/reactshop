@@ -1,69 +1,80 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from 'jquery';
-import Popper from 'popper.js';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import './styles.css';
+import { Carousel, Row, Col } from 'react-bootstrap';
 import './styles.css';
 
 function Banner() {
     return (
-
-        <section className="banner-area">
-            <div className="container">
-                <div className="row fullscreen align-items-center justify-content-start">
-                    <div className="col-lg-12">
-                        <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                    <div className="col-lg-5 col-md-6">
-
-                                        <h1>Nike New <br />Collection!</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                                        <div className="add-bag d-flex align-items-center">
-                                            <a className="add-btn" href="/"><span className="lnr lnr-cross"></span></a>
-                                            <span className="add-text text-uppercase">Add to Bag</span>
-                                        </div>
-
-                                    </div>
-                                    <div className="col-lg-7">
-                                        <div className="banner-img">
-                                            <img className="img-fluid" src="img/banner/banner-img.png" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="carousel-item row">
-                                    <div className="col-lg-5">
-
-                                        <h1>Nike New <br />Collection!</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                                        <div className="add-bag d-flex align-items-center">
-                                            <a className="add-btn" href=""><span className="lnr lnr-cross"></span></a>
-                                            <span className="add-text text-uppercase">Add to Bag</span>
-                                        </div>
-
-                                    </div>
-                                    <div className="col-lg-7">
-                                        <div className="banner-img">
-                                            <img className="img-fluid" src="img/banner/banner-img.png" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-
+        <Row>
+            <Col xs={12} md={1} className="m-0 my-2 p-0 text-center">
+            SIDEBAR
+                <button className="btn btn-block btn-outline-info">Link</button>
+                <button className="btn btn-block btn-outline-info">Link</button>
+                <button className="btn btn-block btn-outline-info">Link</button>
+                <button className="btn btn-block btn-outline-info">Link</button>
+                <button className="btn btn-block btn-outline-info">Link</button>
+            </Col>
+            <Col xs={12} md={11} className="m-0 p-0">
+                <Carousel>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src="https://picsum.photos/800/200"
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                            <h3 className="text-left">Nike New <br />Collection!</h3>
+                            <p className="text-left">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        </p>
+                            <div className="d-flex align-items-left">
+                                <a className="btn btn-secondary" href="/">
+                                    <span className="text-uppercase">Add to Bag</span>
+                                </a>
                             </div>
-                            <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Previous</span>
-                            </a>
-                            <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100 img-fluid"
+                            src="https://picsum.photos/801/201"
+                            alt="Third slide"
+                        />
+                        <Carousel.Caption>
+                            <h3 className="text-left">Nike New <br />Collection!</h3>
+                            <p className="text-left">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        </p>
+                            <div className="d-flex align-items-left">
+                                <a className="btn btn-info" href="/">
+                                    <span className="text-uppercase">Add to Bag</span>
+                                </a>
+                            </div>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src="https://picsum.photos/802/202"
+                            alt="Third slide"
+                        />
+                        <Carousel.Caption>
+                            <h3 className="text-left">Nike New <br />Collection!</h3>
+                            <p className="text-left">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        </p>
+                            <div className="d-flex align-items-left">
+                                <a className="btn btn-primary" href="/">
+                                    <span className="text-uppercase">Add to Bag</span>
+                                </a>
+                            </div>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+            </Col>
+        </Row>
     );
 }
 

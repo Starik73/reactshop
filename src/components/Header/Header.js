@@ -3,9 +3,18 @@ import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Container } from '
 
 function Header() {
 	return (
-		<Navbar bg="secondary" expand="lg">
+		<Navbar bg="dark" variant="dark" expand="xl" sticky="top">
 			<Container className="">
-				<Navbar.Brand href="#home"><b>React-Bootstrap</b></Navbar.Brand>
+				<Navbar.Brand href="#home">
+					<img
+						src="./img/logo512.png"
+						width="30"
+						height="30"
+						className="d-inline-block align-top"
+						alt="React Bootstrap logo"
+					/>
+					<b>React-Bootstrap</b>
+				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="mr-auto">

@@ -37,7 +37,6 @@ function Header() {
 				</Navbar.Collapse>
 			</Container>
 		</Navbar>
-
 	);
 }
 

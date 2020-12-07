@@ -11,15 +11,15 @@ import Banner from './components/Banner';
 import Footer from './components/Footer';
 import Brands from './components/Brands';
 import Products from './components/Products';
+import Grid from "@material-ui/core/Grid";
+
 import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Banner />
-      <Route exact path="/" component={Brands} />
-      <Route exact path="/products" component={Products} />
+<App />
     </Router>
     <Footer />
   </React.StrictMode>,
